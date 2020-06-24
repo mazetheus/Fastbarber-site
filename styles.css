@@ -9,13 +9,47 @@ body {
   font-family: 'Roboto';
 }
 
+h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 79px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #565656;
+  color: #474040;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #333333;
+}
+
 nav {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   top: 0;
-  -ms-grid-columns: 10% 1fr 1fr 10%;
-      grid-template-columns: 10% 1fr 1fr 10%;
   min-height: 10vh;
   color: white;
   fill: white;
@@ -25,7 +59,7 @@ nav {
   z-index: 3;
 }
 
-.nav-links {
+nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,11 +67,11 @@ nav {
       justify-content: space-around;
 }
 
-.nav-links li {
+nav .nav-links li {
   list-style: none;
 }
 
-.nav-links a {
+nav .nav-links a {
   list-style: none;
   text-decoration: none;
   text-transform: uppercase;
@@ -46,17 +80,15 @@ nav {
   color: white;
 }
 
-#logo {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  font-size: 24px;
+nav .logo {
+  width: 15vw;
+  height: auto;
 }
 
-.hamburger {
-  -ms-grid-column-align: end;
-      justify-self: end;
-  display: none;
+nav .hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 section {
@@ -81,27 +113,54 @@ section {
   background: linear-gradient(179.03deg, #939393 1.16%, #D2C2C2 97.01%);
 }
 
-.hero {
-  height: 60%;
+#howto {
+  background: -webkit-gradient(linear, left top, left bottom, from(#D2C2C2), to(#D5D5D5));
+  background: linear-gradient(180deg, #D2C2C2 0%, #D5D5D5 100%);
+}
+
+#responsive {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(0.01%, #D5D5D5), to(#FFFFFF));
+  background: linear-gradient(180deg, #FFFFFF 0%, #D5D5D5 0.01%, #FFFFFF 100%);
+}
+
+#pricing {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#7D7D7D));
+  background: linear-gradient(180deg, #FFFFFF 0%, #7D7D7D 100%);
+}
+
+#faq {
+  background: -webkit-gradient(linear, left top, left bottom, from(#7D7D7D), to(#0E0C0C));
+  background: linear-gradient(180deg, #7D7D7D 0%, #0E0C0C 100%);
+}
+
+#footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0E0C0C), to(#171515));
+  background: linear-gradient(180deg, #0E0C0C 0%, #171515 100%);
+}
+
+.content {
+  height: 100%;
   width: 100%;
   position: relative;
 }
 
-.hero img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.content img {
+  position: absolute;
+  width: 70vw;
+  height: auto;
+  top: 80%;
+  left: 100%;
+  -webkit-transform: translate(-100%, -80%);
+          transform: translate(-100%, -80%);
 }
 
-.headline {
+.content .headline {
   position: absolute;
-  top: 70%;
+  width: 50vw;
+  top: 40%;
   left: 10%;
-  font-size: 100px;
-  -webkit-transform: translate(-10%, -70%);
-          transform: translate(-10%, -70%);
-  color: white;
+  -webkit-transform: translate(-10%, -40%);
+          transform: translate(-10%, -40%);
   z-index: 2;
 }
 

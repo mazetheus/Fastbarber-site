@@ -8,44 +8,73 @@ body{
     font-family: 'Roboto';
 }
 
+h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 79px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    background-color: #565656;
+    color: #474040;
+    text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #333333;
+}
+
 nav{
-    display: grid;
+    display: flex;
     position: fixed;
+    justify-content: space-between;
     top: 0;
-    grid-template-columns: 10% 1fr 1fr 10%;
     min-height: 10vh;
     color: white;
     fill: white;
     align-items: center;
     z-index: 3;
-}
 
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-}
+    .nav-links{
+        display: flex;
+        justify-content: space-around;
+        
+        li{
+            list-style: none;
+        }
+        a{
+            list-style: none;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 15px;
+            color: white;
+        }
+    }
 
-.nav-links li{
-    list-style: none;
-}
+    .logo{
+        width: 15vw;
+        height: auto;
+    }
 
-.nav-links a{
-    list-style: none;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 15px;
-    color: white;
-}
-
-#logo{
-    grid-column: 2/3;
-    font-size: 24px;
-}
-
-.hamburger{
-    justify-self: end;
-    display: none;
+    .hamburger{
+        display: flex;
+    }
 }
 
 section{
@@ -64,26 +93,48 @@ section{
     background: linear-gradient(179.03deg, #939393 1.16%, #D2C2C2 97.01%);
 }
 
-.hero{
-    height: 60%;
-    width: 100%;
-    position: relative;
+#howto{
+    background: linear-gradient(180deg, #D2C2C2 0%, #D5D5D5 100%);
 }
 
-.hero img{
+#responsive{
+    background: linear-gradient(180deg, #FFFFFF 0%, #D5D5D5 0.01%, #FFFFFF 100%);
+}
+
+#pricing{
+    background: linear-gradient(180deg, #FFFFFF 0%, #7D7D7D 100%);
+}
+
+#faq{
+    background: linear-gradient(180deg, #7D7D7D 0%, #0E0C0C 100%);
+}
+
+#footer{
+    background: linear-gradient(180deg, #0E0C0C 0%, #171515 100%);
+}
+
+.content{
     height: 100%;
     width: 100%;
-    object-fit: cover;
-}
+    position: relative;
 
-.headline{
-    position: absolute;
-    top: 70%;
-    left: 10%;
-    font-size: 100px;
-    transform: translate(-10%, -70%);
-    color: white;
-    z-index: 2;
+    img{
+        position: absolute;
+        width: 70vw;
+        height: auto;
+        top: 80%;
+        left: 100%;
+        transform: translate(-100%, -80%);
+    }
+
+    .headline{
+        position: absolute;
+        width: 50vw;
+        top: 40%;
+        left: 10%;
+        transform: translate(-10%, -40%);
+        z-index: 2;
+    }
 }
 
 .hero::after{
@@ -96,6 +147,8 @@ section{
     left: 0;
     opacity: 0.3;
 }
+
+
 
 @media screen and (max-width: 768px){
     body{
