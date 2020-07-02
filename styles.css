@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./src/Roboto-Regular.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -146,12 +151,12 @@ section {
 
 .content img {
   position: absolute;
-  width: 70vw;
+  width: 60vw;
   height: auto;
-  top: 80%;
-  left: 100%;
-  -webkit-transform: translate(-100%, -80%);
-          transform: translate(-100%, -80%);
+  top: 40%;
+  left: 35%;
+  -webkit-transform: translate(-35%, -40%);
+          transform: translate(-35%, -40%);
 }
 
 .content .headline {
@@ -162,6 +167,12 @@ section {
   -webkit-transform: translate(-10%, -40%);
           transform: translate(-10%, -40%);
   z-index: 2;
+  pointer-events: none;
+}
+
+.pulsate {
+  -webkit-animation: pulsate-bck 8s ease-in-out infinite;
+          animation: pulsate-bck 8s ease-in-out infinite;
 }
 
 .hero::after {
@@ -173,6 +184,36 @@ section {
   top: 0;
   left: 0;
   opacity: 0.3;
+}
+
+@-webkit-keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -201,7 +242,6 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: burlywood;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -223,6 +263,38 @@ section {
   .nav-active {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
+  }
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .content h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    font-size: 1.2em;
+    line-height: normal;
+  }
+  .content img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 80vw;
+    top: 40%;
+    left: 10%;
+    -webkit-transform: translate(-10%, -40%);
+            transform: translate(-10%, -40%);
   }
   @-webkit-keyframes navLinkFade {
     from {
