@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 
     <title>FastBarber</title>
 </head>
@@ -83,25 +90,187 @@
 
             <div class="content">
                 <div class="phone">
-                    <img src="./img/PixelBook Go and Pixel 4 XL.png" alt="phone">
+                    <img src="./img/palaxy-mobile.png" alt="phone">
                 </div>
             </div>
         </section>
 
         <section id="howto">
+            <div>
+                <h1>cadastre</h1>
+                <p>escolha seu plano e informe seus dados</p>
+
+                <div class="circle">
+                    <i class="far fa-clipboard"></i>
+                </div>
+            </div>
+
+            <div>
+                <h1>personalize</h1>
+                <p>Defina sua logo e cores</p>
+
+                <div class="circle">
+                    <i class="far fa-clipboard"></i>
+                </div>
+            </div>
+
+            <div>
+                <h1>divulgue</h1>
+                <p>Agora seus clientes poderão baixar seu aplicativo ou acessar seu site</p>
+
+                <div class="circle">
+                    <i class="far fa-clipboard"></i>
+                </div>
+            </div>
+            
         </section>
 
         <section id="responsive">
+
+            <div class="rect" data-aos="slide-right" data-aos-once="true" data-aos-delay="50" data-aos-duration="1000">
+                <h1>sistema responsivo</h1>
+            </div>
+            <div class="text">
+                <div class="rect-2">
+                    <p>não importa em qual dispositivo o seu cliente acessar <br><br>seu site vai ficar incrível</p>
+                </div>
+               <img class="example-mobile" src="./img/palaxy-mobile.png" alt="mobile"> 
+               <img class="example-desktop" src="./img/palaxy-desktop.png" alt="desktop">
+            </div>
+
         </section>
 
         <section id="pricing">
+
+            <div class="table">
+                <div>
+                    <div class="options">
+                        <div class="basic">
+                            <p class="title">basic</p>
+                            <p><strong>site</strong> versão mobile e desktop para <strong>uma</strong> unidade com acesso ao sistema de <strong>agendamento</strong>, relatório de <strong>faturamento</strong> e suporte <strong>comercial</strong></p>
+                            <div class="price">
+                                <p>mensal<br>R$99</p>
+                                <div class="line"></div>
+                                <p>anual<br>R$999</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pro">
+                            <p class="title">pro</p>
+                            <p><strong>app</strong> exclusivo na play store e apple store, site versão mobile e desktop para <strong>múltiplas</strong> unidades com acesso ao sistema de <strong>agendamento</strong>, relatório de <strong>faturamento</strong>, suporte <strong>comercial</strong>, sistema de disparo de <strong>e-mails</strong> e <strong>chat</strong> online no site/app</p>
+                            <div class="price">
+                                <p>mensal<br>R$ 1699 + 99<br><span>adesão + mês</span></p>
+                                <div class="line"></div>
+                                <p>anual<br>R$2499</p>
+                            </div>
+                            <div class="icons">
+                                <i class="fab fa-google-play"></i>
+                                <i class="fab fa-apple"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cadastro">
+                        <p>teste 7 dias <strong>grátis</strong></p>
+                        <button>cadastre-se</button>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="faq">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne">1. What is HTML?</button>									
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo">2. What is Bootstrap?</button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree">3. What is CSS?</button>                     
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              </div>
         </section>
 
-        <section id="footer">
-        </section>
+        <footer id="footer">
+            <article class="desktop-only">
+                <p class="description"><strong>FastBarber</strong> é um produto da FastApp Soluções Inteligentes. Entregamos uma solução completa para gestão da sua barbearia além de disponibilizar um site e aplicativos iOS e Android exclusivos da sua marca para seus clientes.</p>
+
+                <div>
+                    <p>FASTAPP</p>
+                    <a href="#">Quem somos</a>
+                    <a href="#">Quem somos</a>
+                    <a href="#">Quem somos</a>
+                    <div class="icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <p>FASTAPP</p>
+                    <a href="#">Perguntas frequentes</a>
+                    <a href="#">Politica de privacidade</a>
+                </div>
+            </article>
+
+            <div class="mobile-only">
+
+                <div class="infos">
+                    <p class="description"><strong>FastBarber</strong> é um produto da FastApp Soluções Inteligentes. Entregamos uma solução completa para gestão da sua barbearia além de disponibilizar um site e aplicativos iOS e Android exclusivos da sua marca para seus clientes.</p> 
+                
+                    <div class="links">
+                        <p>FASTAPP</p>
+                        <a href="#">Quem somos</a>
+                        <a href="#">Quem somos</a>
+                        <a href="#">Quem somos</a>
+                        <a href="#">Perguntas frequentes</a>
+                        <a href="#">Politica de privacidade</a>
+
+                        <div class="icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="map">
+                <p>ONDE ESTAMOS</p>
+                <p class="adress">Otávio Ribas Guimarães, 91 - Portão, Curitiba - PR, 80320-150</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.1904072392304!2d-49.296734848803254!3d-25.46531674044657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce37080a6aaab%3A0x5869446966ee7e90!2sFastApp%20Solu%C3%A7%C3%B5es%20Inteligentes!5e0!3m2!1spt-BR!2sbr!4v1593895451814!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+        </footer>
     
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.js" integrity="sha256-mfgvzVjyIcoXo0ElsT8uFIuDWYkvKCQ6wrkm6If7iug=" crossorigin="anonymous"></script>
@@ -109,5 +278,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js" integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js" integrity="sha256-ZTEnMVwBY082yM/d9tFkglZux9pVgwfOAg6HD4reObU=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
