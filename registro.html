@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./img/fastbarber-favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <title>FastBarber</title>
+</head>
+<body>
+    <section id="register3">
+
+        <img class="logo" src="./img/logo.png" alt="FastBarber">
+    
+        <div class="progress-bar"> 
+            <i class="fas fa-circle"></i>
+            <hr>
+            <i class="fas fa-circle"></i>
+            <hr>
+            <i class="fas fa-circle"></i>
+        </div>
+        
+        <h1>PASSO 3 DE 3: <b>PERSONALIZE</b></h1>
+    
+        <form>
+            <div class="form-left">
+                <h2>Nome</h2> <input class="name" type="text" name="nome">
+                <h2>Logo</h2> <input type="file" name="arquivos">
+                <h2>Cor principal</h2> <input class="color" type="color" name="favcor" value="#3EC6FF">
+                <h2>Cor secundária</h2> <input class="color" type="color" name="favcor2" value="#EC4C4C">
+            </div>
+            <div class="form-right">
+                <div class="preview">
+                    <div class="preview-logo"></div>
+                    <div class="preview-pri">
+                        <div class="preview-sec"></div>
+                    </div>
+                </div>
+                <p>USE CORES COM UM BOM CONTRASTE ENTRE ELAS PARA MELHORAR A VISIBILIDADE</p>
+            </div>
+        </form>
+
+        <button type="submit" class="visualizar" value="Submit"><strong>VISUALIZAR</strong></button> 
+        <button type="submit" class="salvar" value="Submit" onclick="alert('SALVO!')"><strong>SALVAR</strong></button> 
+        <button type="submit" class="cadastrar" value="Submit" onclick="alert('CADASTRADO!')"><strong>FINALIZAR</strong></button>    
+    </section>
+    
+    <script src="app.js"></script>
+    
+</body>
+</html>
