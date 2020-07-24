@@ -115,6 +115,78 @@ nav .contrate {
   color: #2a0001;
 }
 
+.menu-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 30vw;
+  background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+.menu-open .rect {
+  background: radial-gradient(769.35% 62.2% at -123.12% 50%, rgba(42, 0, 1, 0.9) 0%, rgba(81, 30, 10, 0.9) 100%);
+  width: 2vw;
+  height: 100vh;
+  border-radius: 0 20px 20px 0;
+}
+
+.menu-open ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.menu-open a {
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 15px;
+  margin: 3vh 5vw 3vh 2vw;
+  color: #2A0001;
+}
+
+.menu-open i {
+  border-radius: 50%;
+  color: #fafafa;
+  padding: 0.5vw;
+}
+
+.menu-open li {
+  list-style: none;
+  color: #2A0001;
+  font-size: 1vw;
+  margin: 3vh 0;
+  margin-left: -2vw;
+  text-transform: uppercase;
+}
+
+.menu-open li:hover i {
+  background: #fafafa;
+  color: #2A0001;
+  margin-left: 1vw;
+}
+
+.menu-open li:hover a {
+  font-weight: bold;
+  color: #2A0001;
+  text-decoration: none;
+}
+
 section {
   width: 100%;
   height: 100vh;
