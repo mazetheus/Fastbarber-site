@@ -64,7 +64,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 3;
+  z-index: 5;
 }
 
 nav .nav-links {
@@ -94,13 +94,26 @@ nav .logo {
 }
 
 nav .hamburger {
+  z-index: 300;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-nav .hamburger .close-icon {
+nav .hamburger .burger-open {
+  display: block;
+}
+
+nav .hamburger .burger-close {
   display: none;
+}
+
+nav .hamburger.close .burger-open {
+  display: none;
+}
+
+nav .hamburger.close .burger-close {
+  display: block;
 }
 
 nav .login {
@@ -115,7 +128,15 @@ nav .contrate {
   color: #2a0001;
 }
 
-.menu-open {
+.close .rect {
+  display: none;
+}
+
+.close ul {
+  display: none;
+}
+
+.open {
   position: fixed;
   top: 0;
   left: 0;
@@ -131,14 +152,14 @@ nav .contrate {
           backdrop-filter: blur(4px);
 }
 
-.menu-open .rect {
+.open .rect {
   background: radial-gradient(769.35% 62.2% at -123.12% 50%, rgba(42, 0, 1, 0.9) 0%, rgba(81, 30, 10, 0.9) 100%);
   width: 2vw;
   height: 100vh;
   border-radius: 0 20px 20px 0;
 }
 
-.menu-open ul {
+.open ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,7 +171,7 @@ nav .contrate {
       align-self: center;
 }
 
-.menu-open a {
+.open a {
   list-style: none;
   text-decoration: none;
   text-transform: uppercase;
@@ -160,13 +181,13 @@ nav .contrate {
   color: #2A0001;
 }
 
-.menu-open i {
+.open i {
   border-radius: 50%;
   color: #fafafa;
   padding: 0.5vw;
 }
 
-.menu-open li {
+.open li {
   list-style: none;
   color: #2A0001;
   font-size: 1vw;
@@ -175,13 +196,13 @@ nav .contrate {
   text-transform: uppercase;
 }
 
-.menu-open li:hover i {
+.open li:hover i {
   background: #fafafa;
   color: #2A0001;
   margin-left: 1vw;
 }
 
-.menu-open li:hover a {
+.open li:hover a {
   font-weight: bold;
   color: #2A0001;
   text-decoration: none;

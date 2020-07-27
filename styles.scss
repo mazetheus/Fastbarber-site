@@ -54,7 +54,7 @@ nav {
   color: white;
   fill: white;
   align-items: center;
-  z-index: 3;
+  z-index: 5;
 
   .nav-links {
     display: flex;
@@ -79,11 +79,24 @@ nav {
   }
 
   .hamburger {
+    z-index: 300;
     display: flex;
+
+    .burger-open {
+      display: block;
+    }
+    .burger-close {
+      display: none;
+    }
   }
 
-  .hamburger .close-icon {
-    display: none;
+  .hamburger.close {
+    .burger-open {
+      display: none;
+    }
+    .burger-close {
+      display: block;
+    }
   }
 
   .login {
@@ -99,7 +112,16 @@ nav {
   }
 }
 
-.menu-open{
+.close{
+  .rect{
+    display: none;
+  }
+  ul{
+    display: none;
+  }
+}
+
+.open{
   position: fixed;
   top: 0;
   left: 0;
