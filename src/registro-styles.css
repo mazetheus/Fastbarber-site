@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./src/Roboto-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex !important;
+  width: 100%;
+  justify-content: space-between;
+  top: 0;
+  min-height: 10vh;
+  color: white;
+  fill: white;
+  align-items: center;
+  z-index: 3;
+}
+nav .logo {
+  width: 15%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+section {
+  display: flex;
+  position: relative;
+  background: linear-gradient(180deg, #FFFFFF 0%, #7D7D7D 100%);
+}
+
+#register3 .progress-bar {
+  display: flex;
+  background-color: gray;
+  flex-direction: row;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 2%;
+}
+#register3 .progress-bar hr {
+  width: 100%;
+  margin: 0.6vh -0.4vw 0 -0.4vw;
+  border: none;
+  color: black;
+}
+#register3 h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2vw;
+  text-align: center;
+  pointer-events: none;
+  background-color: #565656;
+  color: #474040;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+#register3 h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5vw;
+  pointer-events: none;
+  background-color: #565656;
+  color: #474040;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  margin-left: 5%;
+}
+#register3 .informacoes {
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+}
+#register3 .infos {
+  align-items: center;
+  display: flex;
+  background-color: inherit;
+  text-align: left;
+  font-size: 1.5vw;
+  flex-direction: row;
+  margin-top: 5vh;
+  border-bottom: 1px solid white;
+}
+#register3 .infos p {
+  text-align: center;
+  margin-left: 1vw;
+}
+#register3 .table {
+  position: relative;
+  background: radial-gradient(100% 100% at 0% 0%, #434343 0%, #0B0B0B 100%);
+  border-radius: 20px;
+  height: 80vh;
+  width: 20vw;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#register3 .table .options {
+  display: grid;
+  grid-template-columns: 1.4fr 0fr 1.4fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: ". . .";
+}
+#register3 .table .options p {
+  color: #FAFAFA;
+  width: 25vw;
+  display: inline;
+  text-align: justify;
+  font-size: 1vw;
+}
+#register3 .table .options .title {
+  margin: 5vh auto;
+  position: relative;
+  padding-left: 10vw;
+  display: block;
+  font-size: 2vw;
+}
+#register3 .table .options .line {
+  border-left: 1px solid #FAFAFA;
+  margin: 2vh 0;
+}
+#register3 .table .options .basic, #register3 .table .options .pro {
+  margin: 0 5vw;
+}
+#register3 .table .options .basic h4, #register3 .table .options .pro h4 {
+  color: #FAFAFA;
+  width: 25vw;
+  display: inline;
+  text-align: justify;
+  font-size: 1vw;
+  padding-left: 48%;
+}
+#register3 .table .options .basic h5, #register3 .table .options .pro h5 {
+  color: #FAFAFA;
+  width: 25vw;
+  display: inline;
+  text-align: justify;
+  font-size: 1vw;
+  padding-left: 42%;
+}
+#register3 .table .options .basic i, #register3 .table .options .pro i {
+  color: white;
+  padding-left: 47%;
+}
+#register3 .table .options .price {
+  display: grid;
+  grid-template-columns: 1.4fr 0fr 1.4fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: ". . .";
+  margin-top: 5vh;
+}
+#register3 .table .options .price p {
+  text-align: center;
+  max-width: 10vw;
+  justify-self: center;
+}
+#register3 .table .options .price span {
+  font-size: 0.5vw;
+  display: inline;
+}
+#register3 .table .options .price form {
+  padding-left: 40%;
+  align-content: space-around;
+}
+#register3 button {
+  background: radial-gradient(100% 100% at 0% 0%, #6C1A1C 0%, #310405 100%);
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25), -2px -2px 12px rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #FAFAFA;
+  width: 20vw;
+  height: 5vw;
+  text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.5);
+  border: none;
+  text-align: center;
+  margin-top: 2%;
+}
+#register3 .cadastrar {
+  margin-left: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  #register3 button {
+    top: 10%;
+  }
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes pulsate-bck {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes shine {
+  10% {
+    opacity: 1;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+  }
+  100% {
+    opacity: 0;
+    top: -30%;
+    left: -30%;
+    transition-property: left, top, opacity;
+  }
+}
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
