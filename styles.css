@@ -161,6 +161,7 @@ nav .contrate {
   width: 2vw;
   height: 100vh;
   border-radius: 0 20px 20px 0;
+  display: block;
 }
 
 .open ul {
@@ -1171,6 +1172,9 @@ section {
   body {
     overflow-x: hidden;
   }
+  nav {
+    width: 100vw;
+  }
   nav .hamburger {
     display: block;
     cursor: pointer;
@@ -1194,8 +1198,12 @@ section {
     display: none;
   }
   nav .logo {
-    margin-left: 10vw;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     width: 40vw;
+  }
+  .open .rect {
+    width: 100%;
   }
   #home .content {
     display: -webkit-box;

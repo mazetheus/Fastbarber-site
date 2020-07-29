@@ -139,6 +139,7 @@ nav {
     width: 2vw;
     height: 100vh;
     border-radius: 0 20px 20px 0;
+    display: block;
   }
   
   ul{
@@ -1037,6 +1038,7 @@ section {
   }
 
   nav {
+    width: 100vw;
     .hamburger {
       display: block;
       cursor: pointer;
@@ -1066,8 +1068,14 @@ section {
     }
 
     .logo {
-      margin-left: 10vw;
+      transform: translateX(0);
       width: 40vw;
+    }
+  }
+
+  .open{
+    .rect{
+      width: 100%;
     }
   }
 
